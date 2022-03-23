@@ -1,4 +1,5 @@
 import React from 'react';
+import Dog from '../../../public/img/Home/dog.jpg'
 
 function Header(props) {
     return (
@@ -11,15 +12,19 @@ function Header(props) {
                             <span className='w-[466px] left-0 top-[206px] bottom-0 leading-[32px] text-[18px] font-[400] text-[#2D2D2D] opacity-50 mt-[30px] sm:w-[320px] sm:h-[126px] sm:absolute sm:top-[150px] sm:text-center'>This is a sampe landing page,created with Figma and Anima.No coding involved</span>
                         </div>
 
-                        <div className="static w-[380px] left-0 top-[337.24px] bottom-0 flex-none order-none grow-0 my-[41px] mx-0 sm:absolute sm:left-[59px] sm:top-[316px]">
-                            <button className=" left-[0%] right-[46.58%] top-[0%] bottom-[0%] bg-[#F8D57E] rounded-[10px] w-[203px] h-[64px] sm:w-[203px] sm:h-[64px]">
+                        <div className="static w-[380px] left-0 top-[337.24px] bottom-0 flex-none order-none grow-0 my-[41px] mx-0 sm:absolute sm:left-[59px] sm:top-[316px] ">
+                            <button className=" left-[0%] right-[46.58%] top-[0%] bottom-[0%] bg-[#F8D57E] rounded-[10px] w-[203px] h-[64px] sm:w-[203px] sm:h-[64px] sm:mb-[30px]">
                                 <span className=" w-[103px] h-[32px]">Get started</span>
                             </button>
+                            <div className='hidden sm:flex sm:mx-auto sm:absolute sm:left-[36px]'>
+                                <img className=' sm:w-[20px]  sm:h-[20px]  sm:mr-[11px]' src='https://media.istockphoto.com/vectors/play-button-icon-vector-id1012440302?k=20&m=1012440302&s=612x612&w=0&h=TEKWI78gh_uxnkIHUKiQUHYvcamS34llYi0o68OXWlw=' />
+                                <span className=''>Watch Video</span>
+                            </div>
                         </div>
-
+                        
                     </div>
                 </div>
-                <img className=' z-10 absolute w-[500px] right-0 top-0 bottom-0 rounded-[10px] bg-cover sm:top-[572px]' src='https://www.plannthat.com/wp-content/uploads/2021/09/karsten-winegeart-qy0BHykaq0E-unsplash.jpg'/>
+                <img className=' z-10 absolute w-[500px] right-0 top-0 bottom-0 rounded-[10px] bg-cover sm:top-[572px]' src={Dog}/>
             </div>
         </div>
     );
